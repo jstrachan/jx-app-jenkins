@@ -76,6 +76,14 @@ jenkinstokenjob:
       - get
       - list
       - watch
+    - apiGroups:
+      - vault.banzaicloud.com
+      resources:
+      - vaults
+      verbs:
+      - get
+      - list
+      - watch
 
 jenkins:
   rbac:
